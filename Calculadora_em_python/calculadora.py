@@ -23,8 +23,11 @@ elif calculadora == "**":
     resultado = num1 ** num2 
     print ("O resultado da potenciação será: {:.2f}" .format(resultado))
 elif calculadora == "%":
-    resultado = num1 % num2 
-    print ("O resultado do resto da divisão será: {:.2f}" .format(resultado))
+    if num2 == 0:
+        print("Erro: Divisão por zero!")
+    else:
+        resultado = num1 % num2
+        print(f"O resultado do resto da divisão é: {resultado:.2f}")
 else:
     print("Operação invalida! Use +, -, *, /, ** ou %.")
 # no final é para definir que a operação foi errada na hora do erro de digito 
