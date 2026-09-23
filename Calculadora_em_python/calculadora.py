@@ -12,7 +12,7 @@ elif calculadora == "-":
     print ("O resultado da subtração será: {:.2f}" .format(resultado))
 elif calculadora == "*":
     resultado = num1 * num2 
-    print ("O resultado da multiplicação sera: {:.2f}" .format(resultado))
+    print(f"O resultado da multiplicação é: {resultado:.2f}")
 elif calculadora == "/":
     if num2 == 0:
         print("Erro: Divisão por zero!")
